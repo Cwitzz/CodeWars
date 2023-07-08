@@ -1,13 +1,15 @@
-
-
-
 def tribonacci(signature, n):
-    indice = n
-    n1 = signature[0]
-    n2 = signature[1]
-    n3 = signature[2]
+    if n == 0:
+        return []
+    elif n <= 3:
+        return signature[:n]
 
-    n4 = n1+n2+n3
+    sequence = signature[:]
+
+    while len(sequence) < n:
+        next_number = sum(sequence[-3:])
+        sequence.append(next_number)
+
+    return sequence[:n]
 
 
-tribonacci([0,1,1], 3)
