@@ -7,7 +7,7 @@ def tribonacci(signature, n):
     n2 = signature[1]
     n3 = signature[2]
 
-    tribona = n1+n2+n3
+    n4 = n1+n2+n3
 
 
 tribonacci([0,1,1], 3)
