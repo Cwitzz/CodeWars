@@ -16,9 +16,9 @@ def zonk_score(roll):
     for die, count in counter.items():
         if count >= 3:
             if die == 1:
-                total_score += 1000 * (count // 3)
+                total_score += 1000 * (count // 3) * (count // 3)
             else:
-                total_score += 100 * die * (count // 3)
+                total_score += 100 * die * (count // 3) * (count // 3)
             counter[die] %= 3
         if die == 1:
             total_score += 100 * counter[die]
