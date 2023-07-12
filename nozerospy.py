@@ -7,4 +7,4 @@ def no_boring_zeros(n):
     return int(n)
 
 
-no_boring_zeros(0)
+no_boring_zeros(12330)
